@@ -1,0 +1,134 @@
+sudo su
+
+yum update -y
+
+yum install git -y
+
+which git 
+
+git --version
+
+git config  --global user.name "hiren"
+
+git config  --global user.email "bhiren48@gmail.com"
+
+git config --list
+
+------------------------------------------------------------------------------
+ mkdir dir1
+
+ls
+
+cd dir1
+
+git init
+
+touch or cat > file1  
+
+git status
+
+git add file.extension
+
+git add .
+
+git status
+
+git commit  -m "comment-tag1"
+
+git status
+
+git log
+----------------------------------------------------------------------
+git show <commit-id>
+
+git remote add origin<central git  url>
+ 
+git push -u origin master
+
+cat > file1 (open the file which was created by the dev1)
+---------------------------------------------------------------------------
+
+git pull origin master
+
+git push origin master
+
+----------------------------------------------------------------------------
+
+#git log --grep "ignore 0r any messgae-which we want to find for the previous commit"
+
+------------------------------------------------------------------------------
+
+git log  --oneline (to see the previos commits or past activities)
+------------------------------------------------------------------------------
+adding all files to git track form local repo :
+$ git add -A
+
+commiting all files to gather
+
+$ git commit -a -m ""
+
+===========================================================================
+
+$ git branch firstbranch(name of branch we want to create)
+
+$ git checkout firstbranch (now we can switch to, the branch )  
+
+===========================================================================
+always merge the branches to master branch if created branches :
+
+$ git merge firstbranch (name of the branch)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+branch :
+
+git branch (to see where we are)
+
+git branch branchname 		
+
+git checkout branch1 (to checkout from current room and enter into another branch)
+
+--> to delete branch
+
+git branch -d(small d) (branchname)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+delete or remove directory : rm -rf (name of directory)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+git branch merge :
+
+git merge branchname
+
+git log
+
+===============================================================================
+
+git stashing
+
+git stash
+
+git stash list
+
+git stash apply stash@{number of the file}
+
+-> to clear the stash items command git stash clear
+
+==============================================================================
+git reset
+
+git reset filename
+
+git reset .
+
+git reset --hard
+
+
+
+
+
+
+
+
+
